@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Application | CyberVault IT Centre University</title>
+	<link rel="stylesheet" href="externalcss.css">
+</head>
+<body>
+	<header class="site-header">
+		<a class="site-name" href="index.html">CyberVault <span>IT Centre University</span></a>
+		<nav aria-label="Main navigation">
+			<a href="index.html">Home</a><a href="about.html">About Us</a><a href="programmes.html">Programmes</a><a href="services.html">Services</a><a href="application.html" aria-current="page">Application</a><a href="contact.html">Contact</a>
+		</nav>
+	</header>
+	<main class="content-width page-content">
+		<p class="eyebrow">Your next chapter</p>
+		<h1>Student application</h1>
+		<p class="lead">Complete the form below to submit an application of interest. Fields marked required must be completed.</p>
+		<form class="form-layout" action="#" method="get">
+			<fieldset>
+				<legend>Personal information</legend>
+				<div class="form-grid">
+					<label>Full name <span class="required">*</span><input type="text" name="fullName" autocomplete="name" required></label>
+					<label>Email address <span class="required">*</span><input type="email" name="email" autocomplete="email" required></label>
+					<label>Telephone number <span class="required">*</span><input type="tel" name="telephone" autocomplete="tel" required></label>
+					<label>Date of birth <span class="required">*</span><input type="date" name="dateOfBirth" required></label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Programme choices</legend>
+				<div class="form-grid">
+					<label>Programme <span class="required">*</span>
+						<select name="programme" required>
+							<option value="">Choose a programme</option>
+							<option>Computer Science</option><option>Cybersecurity</option><option>Information Systems</option><option>Data Science and Artificial Intelligence</option>
+						</select>
+					</label>
+					<label>Preferred study mode
+						<select name="studyMode"><option value="">Choose a study mode</option><option>Full-time</option><option>Part-time</option></select>
+					</label>
+				</div>
+				<p class="field-title">Study level</p>
+				<div class="choice-row">
+					<label><input type="radio" name="studyLevel" value="undergraduate" required> Undergraduate</label>
+					<label><input type="radio" name="studyLevel" value="postgraduate"> Postgraduate</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Additional details</legend>
+				<label class="check-label"><input type="checkbox" name="updates" value="yes"> Send me admissions updates by email</label>
+				<label>Tell us about your interests or relevant experience<textarea name="statement" rows="5"></textarea></label>
+			</fieldset>
+			<p class="form-note">This demonstration form does not transmit or store applications.</p>
+			<div class="button-row"><button type="submit">Submit application</button><button class="button-secondary" type="reset">Clear form</button></div>
+		</form>
+	</main>
+	<footer><p>SOKODE2311 <span aria-hidden="true">|</span> CyberVault IT Centre University</p></footer>
+</body>
+</html>
